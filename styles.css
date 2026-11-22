@@ -1,68 +1,48 @@
 body {
-    margin: 20px;
-    /*
-    Challenge:
-    Find a web safe font you like, and add it 
-    to your card.
-    */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
 
 .avatar {
-    width: 150px;
-    border-radius: 15px;
+  width: 150px;
+  border-radius: 15px;
+  box-sizing: border-box;
 }
 
 .avatar:hover {
-    width:160px;
+  border: 6px solid #03045e;
 }
 
 @keyframes myAnimation {
-  from {border: 6px double #0077b6; box-shadow: none;}
-  to {border: 10px solid #03045e; 
-      box-shadow: 10px 10px 40px #03045e; }
+  from {
+    border: 6px double #0077b6;
+    box-shadow: none;
+  }
+  to {
+    border: 10px solid #03045e;
+    box-shadow: 10px 10px 40px #03045e;
+  }
 }
 
 .card {
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
-    text-align: center;
-    background: #caf0f8;
-    color: #03045e;
-    border-radius: 15px;
-    border: 10px solid #03045e; 
-    box-shadow: 10px 10px 40px #03045e;
-    animation-name: myAnimation;
-    animation-duration: 10s;
-    /*
-    Challenge:
-    Find a color palette you like on Coolors.co
-    and use it in your business card.
-     */
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  text-align: center;
+  background: #c3e5e9;
+  color: #03045e;
+  border-radius: 15px;
+  border: 10px solid #03045e;
+  box-shadow: 10px 10px 40px #03045e;
+  animation-name: myAnimation;
+  animation-duration: 1s;
 }
 
 .border-blue {
-    border: 1px dotted blue;
+  border: 1px dotted blue;
 }
-
-/*
-Stretch goals:
-Find other ways you can personalize 
-the design of your business card, e.g.:
-- change the border(s)
-- add border radius
-- shuffle the layout
-- shadows        🤯
-- hover effects  🤯🤯
-- animations     🤯🤯🤯
-*/
-
-/*
-Final challenge:
-Download the code to your local computer and place it
-in a folder called "business-card"
-*/
